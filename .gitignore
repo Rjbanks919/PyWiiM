@@ -1,0 +1,7 @@
+# Python remnants
+__pycache__/
+*.pyc
+build/
+dist/
+*.egg-info
+*.toml
