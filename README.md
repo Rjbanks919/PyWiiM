@@ -15,7 +15,7 @@ streamers (as far as I know they all utilize the same API).
 
 ## Installation
 
-(WIP) You can install `pywiim` from [PyPI](https://pypi.org/).
+(WIP) You can install `pywiim` from [PyPI](https://test.pypi.org/project/pywiim/).
 
 ```bash
 $ python3 -m pip install pywiim
