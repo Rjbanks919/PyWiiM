@@ -87,7 +87,7 @@ async def main():
         p.disable_eq(),
         p.get_shutdown_timer(),
         p.play_audio_url("https://hd1.wamu.org/wamu-1"),
-        p.set_volume_relative(100),
+        p.set_volume_relative(-10),
         p.get_playback_status(),
     )
 
