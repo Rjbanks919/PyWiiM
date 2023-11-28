@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 """Constants for PyWiiM."""
+
 # General constants
 STATUS_OK = 200
 
@@ -68,6 +68,3 @@ PYWIIM_MODE_MIRROR         = "50" # Mirror (?)
 PYWIIM_MODE_VOICEMAIL      = "60" # Voicemail (?)
 PYWIIM_MODE_SLAVE          = "99" # Slave
 
-# TODO
-# - Add EQ preset names
-# - ...

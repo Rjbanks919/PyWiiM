@@ -4,11 +4,11 @@ Python interface for the [WiiM](https://www.wiimhome.com/) device API.
 
 ## Ruminations
 
-This package was born out of a desire to integrate a WiiM Pro streamer with 
-Home Assistant. Part of the integration required some sort of library to 
+This package was born out of a desire to integrate a WiiM Pro streamer with
+Home Assistant. Part of the integration required some sort of library to
 perform the API calls, which is where pywiim came in.
 
-WiiM provides a fairly straightforward API for interacting with their 
+WiiM provides a fairly straightforward API for interacting with their
 streamers (as far as I know they all utilize the same API).
 
 [You can find this API on WiiM's website.](https://www.wiimhome.com/pdf/HTTP%20API%20for%20WiiM%20Mini.pdf)
@@ -24,15 +24,15 @@ $ python3 -m pip install pywiim
 ## Implementation Notes
 
 As you will notice from using the `PyWiim` class, the main methods available are
-designed to be used asynchronously. This was chosen to align best with Home 
+designed to be used asynchronously. This was chosen to align best with Home
 Assistant's asynchronous functionality.
 
-You also might notice that `verify_ssl` is set to `False` for the actual GET 
+You also might notice that `verify_ssl` is set to `False` for the actual GET
 requests. This is required due to the API implementation from WiiM.
 
 ## Supported Commands
 
-Below is a table of the currently supported commands in `pywiim`. Please read 
+Below is a table of the currently supported commands in `pywiim`. Please read
 the method docstrings for expected arguments and nuances.
 
 | Command | Description |
@@ -63,6 +63,9 @@ the method docstrings for expected arguments and nuances.
 | `play_audio_url` | Play an audio stream via URL |
 | - | - |
 | `set_volume_relative` | Set volume level relative to current level |
+| `get_track` | Gets the current track name |
+| `get_album` | Gets the current album name |
+| `get_artist` | Gets the current artist name |
 
 ## Example Usage
 

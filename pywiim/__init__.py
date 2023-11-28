@@ -1,1 +1,1 @@
-from .pywiim import PyWiim, CannotConnectError
+from .pywiim import PyWiim, PyWiimCannotConnectError
